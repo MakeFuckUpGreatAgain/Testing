@@ -12,6 +12,7 @@ class Complex
         double imaginary;
         Complex operator +(Complex &A);
         Complex operator -(Complex &A);
+        double module ();
 
     protected:
 

@@ -1,5 +1,5 @@
 #include "Complex.h"
-#include <iostream>
+#include <math.h>
 
 Complex::Complex()
 {
@@ -23,6 +23,11 @@ Complex Complex::operator -(Complex &A)
 {
     return Complex (this->real-A.real,this->imaginary-A.imaginary);
     //return A;
+}
+
+double Complex::module()
+{
+    return sqrt(this->imaginary*this->imaginary+this->real*this->real);
 }
 
 Complex::~Complex()
