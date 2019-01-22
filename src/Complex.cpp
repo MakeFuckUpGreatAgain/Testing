@@ -30,6 +30,12 @@ double Complex::module()
     return sqrt(this->imaginary*this->imaginary+this->real*this->real);
 }
 
+double Complex::phase()
+{
+    if (real==0) return 3,14; // trzeba dodać drugi wyjatek
+    return atan(this->imaginary/this->real);
+}
+
 Complex::~Complex()
 {
     //dtor

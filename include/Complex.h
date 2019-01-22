@@ -13,6 +13,7 @@ class Complex
         Complex operator +(Complex &A);
         Complex operator -(Complex &A);
         double module ();
+        double phase();
 
     protected:
 
