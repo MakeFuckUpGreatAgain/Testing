@@ -1,28 +1,29 @@
+/*
+testing of git and github function with complex numbers
+*/
+
+
 #include "Complex.h"
 #include <math.h>
+#include <string>
 
 Complex::Complex()
+    :real(0), imaginary(0)
 {
-    real=0;
-    imaginary=0;
-    //ctor
 }
 Complex::Complex(double R, double I)
+    : real(R), imaginary(I)
 {
-    real=R;
-    imaginary=I;
 }
 
 Complex Complex::operator +(Complex &A)
 {
     return Complex (this->real+A.real,this->imaginary+ A.imaginary);
-    //return A;
 }
 
 Complex Complex::operator -(Complex &A)
 {
     return Complex (this->real-A.real,this->imaginary-A.imaginary);
-    //return A;
 }
 
 double Complex::module()
@@ -32,7 +33,14 @@ double Complex::module()
 
 double Complex::phase()
 {
-    if (real==0) return 3,14; // trzeba dodać drugi wyjatek
+    if (this->real==0)
+        if (this->imaginary!=0)
+            return 3,14;
+        else
+        {
+            throw char('0');
+            return 0;
+        }
     return atan(this->imaginary/this->real);
 }
 
