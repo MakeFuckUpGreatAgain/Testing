@@ -15,8 +15,6 @@ int main()
 //=======
     suma=proba/proba2;
 //>>>>>>> testing
-    cout<< "czesc modul: ";
-    cout<<suma.module()<<endl;
     //un_test();
     try
     {
