@@ -15,6 +15,7 @@ class Complex
         double module ();
         double phase();
         double Real();
+        Complex operator/(Complex &B);
 
     protected:
 
