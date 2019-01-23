@@ -15,6 +15,7 @@ int main()
 //=======
     suma=proba/proba2;
 //>>>>>>> testing
+    cout << "cos popisze"<< "  sredmio wychodzi"<<endl;
     //un_test();
     try
     {
