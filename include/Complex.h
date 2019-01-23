@@ -14,6 +14,7 @@ class Complex
         Complex operator -(Complex &A);
         double module ();
         double phase();
+        double Real();
 
     protected:
 

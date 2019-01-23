@@ -43,6 +43,10 @@ double Complex::phase()
         }
     return atan(this->imaginary/this->real);
 }
+double Complex::Real()
+{
+    return this->real;
+}
 
 Complex::~Complex()
 {
