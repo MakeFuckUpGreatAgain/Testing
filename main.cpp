@@ -16,6 +16,7 @@ int main()
     suma=proba/proba2;
 //>>>>>>> testing
     cout<< "czesc modul: ";
+    cout << "cos popisze"<< "  sredmio wychodzi"<<endl;
     cout<<suma.module()<<endl;
     //un_test();
     try
