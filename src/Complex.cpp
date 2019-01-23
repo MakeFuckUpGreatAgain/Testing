@@ -20,6 +20,11 @@ Complex Complex::operator +(Complex &A)
 {
     return Complex (this->real+A.real,this->imaginary+ A.imaginary);
 }
+Complex Complex::operator/(double A)
+{
+    return Complex(this->real/A,this->imaginary/A);
+}
+
 Complex Complex::operator/(Complex &B)
 {
     double mianownik(B.real*B.real+B.imaginary*B.imaginary);
