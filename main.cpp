@@ -1,23 +1,21 @@
-#include <iostream>
-#include "bedzie_testowako.h"
+
 #include "Complex.h"
+#include <iostream>
 #include <string>
-#include "Unit_Test.h"
-//#include "Complex.h"
+//#include "Unit_Test.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
     Complex proba(2,0), proba2(3.5,5.5),suma, CX0;
-    suma=proba+proba2;
-    Unit_Test a;
+    suma=proba/proba2;
     cout<< "czesc modul: ";
     cout<<suma.module()<<endl;
+    //un_test();
     try
     {
-        cout<< "faza "<< CX0.phase()<<endl;
+        cout<< "faza "<< suma.phase()<<endl;
     }
     catch (char)
     {
